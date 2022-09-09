@@ -1,0 +1,28 @@
+{
+  "name": "assessment_devops",
+  "version": "1.0.0",
+  "description": "Microservicio REST",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "test": "mocha ./src/test",
+    "build": "babel src -d dist",
+    "start": "node dist"
+  },
+  "author": "Tata Consultancy Services",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10"
+  }
+}
